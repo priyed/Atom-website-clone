@@ -7,9 +7,7 @@
 body {
     background-color: #37383C;
     color: rgb(228, 208, 177);
-}
-.big-wrapper {
-    width: 100%;
+    
 }
 
 /* ******************
@@ -46,42 +44,40 @@ Navigation styling
 }
 
 .sign-in {
-    position: relative;
-    top: 11px;
+    display: inline-block;
 }
+
 
 /***************
 Hero Section and circles styling
 ***************/
 
 .hero-wrapper {
-    height: auto;
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    
 }
 
 .hero-circle {
     position: absolute;
-    top: 12.4em;
-    right: 60px;
-    animation: move 240s infinite normal;
-    
+    top: 70px;
+    animation: rotate 240s infinite normal; 
 }
 
-@keyframes move {
+.atom-logo {
+    position: absolute;
+    top: 190px;
+}
+
+@keyframes rotate {
     from {
         transform: rotate(-360deg);
     }
     to {
         transform: rotate(360deg);
     }
-}
-
-.atom-logo {
-    position: absolute;
-    top: 320px;
-    right: 11.25em;
 }
 
 .download-area {
@@ -98,7 +94,7 @@ Hero Section and circles styling
 
 .download-area li {
     border: 1px solid #4E4B4D;
-    padding: 33px 15px;
+    padding: 18px 15px;
 }
 
 .download-area li:first-child {
