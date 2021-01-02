@@ -1,0 +1,599 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #37383C;
+    color: rgb(228, 208, 177);
+}
+.big-wrapper {
+    width: 100%;
+}
+
+/* ******************
+Navigation styling
+*******************/
+.nav-wrap {
+    background-color: #584B4F;
+    color: #EAE8DD;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 23.8px;
+    text-align: justify;
+    padding: 20px 25px;
+}
+.top-nav {
+    text-align: center;
+    width: 93%;
+    padding: 0 5px 10px;
+}
+.top-nav a {
+    color: #EAE8DD;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24.8px;
+    margin: 0 7px;
+}
+
+.nav-wrap a:visited {
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: #81C08B;
+}
+
+.sign-in {
+    position: relative;
+    top: 11px;
+}
+
+/***************
+Hero Section and circles styling
+***************/
+
+.hero-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-circle {
+    position: absolute;
+    top: 12.4em;
+    right: 60px;
+    animation: move 240s infinite normal;
+    
+}
+
+@keyframes move {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.atom-logo {
+    position: absolute;
+    top: 320px;
+    right: 11.25em;
+}
+
+.download-area {
+    margin-top: 550px;
+    text-align: center;
+}
+
+.download-area ul {
+    font-family: 'Segoe UI';
+    color: #EFDAb9;
+    line-height: 5px;
+    list-style-type: none;
+}
+
+.download-area li {
+    border: 1px solid #4E4B4D;
+    padding: 33px 15px;
+}
+
+.download-area li:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.download-area li:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.download-area .version {
+    padding: 15px;
+}
+
+.version h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 3.4px;
+}
+
+.version a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21.6px;
+    color: #8e8373;
+}
+
+.version a:visited {
+    text-decoration: none;
+}
+
+.version a:hover {
+    color: #ebac09;
+}
+
+.download-area .platform {
+    padding: 15px;
+}
+.platform h3 {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 1.1px;
+    font-weight: 300;
+}
+
+.platform p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21.6px;
+    color: #8e8373;
+}
+
+.download a {
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #343233;
+    text-decoration: none;
+    background-color: #FFD152;
+    padding: 20px 40px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.download a:hover {
+    background-color: #FFC31F;
+}
+
+.download a:active {
+    transform: translateY(2px);
+}
+
+.terms-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.terms-wrap .terms-and-conditions {
+    color: #8d8b88;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19.2px;
+}
+
+.terms-and-conditions a {
+    text-decoration: none;
+    color: #8d8b88;
+    transition: 0.3s;
+}
+
+.terms-and-conditions a:hover {
+    color: #FFC31F;
+}
+
+.tips {
+    margin-top: 30px;
+}
+
+.tips a {
+    font-size: 14px;
+    line-height: 21.6px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #786f78;
+    margin: 20px;
+    transition: 0.3s
+}
+
+.tips a:hover {
+    color: #FFC31F;
+}
+
+.atom-catch-phrase {
+    font-family: 'Segoe UI';
+    font-size: 38px;
+    line-height: 57.6px;
+    letter-spacing: 1.9px;
+    font-weight: 200;
+    color: #EFDAB9;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.atom-catch-phrase span {
+    color: #78B0A0;
+}
+
+/************************
+End Hero Section
+*************************/
+
+/************************
+Start Atom Uses
+*************************/
+
+.teletype, .github {
+    margin: 50px;
+    font-family: 'Segoe UI';
+    color: #EFDAb9;
+}
+
+.teletype h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 15px;
+}
+
+.teletype .teletype-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.teletype-screenshot {
+    text-align: center;
+    width: 100%;
+}
+
+.teletype img {
+    filter: sepia(30%) saturate(5) grayscale(20%) ;
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: 1s;
+    margin-bottom: 50px;
+}
+
+.teletype img:hover {
+    filter: none;
+}
+
+.teletype .share-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.share-desc a {
+    text-decoration: none;
+    color: #FFD152; 
+    transition: 0.5s;
+}
+
+.share-desc a:hover {
+    color: rgb(221, 175, 49);
+}
+
+.learn-more-1 {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: justify;
+    color: #343233;
+    background-color: #FFD152;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.learn-more-1:hover {
+    background-color: #FFC31F;
+}
+
+.learn-more-1:active {
+    transform: translateY(2px);
+}
+
+.github {
+    margin-top: 200px;
+    margin-bottom: 220px;
+}
+
+.github h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+}
+
+.git-atom-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: -5px;
+}
+
+.git-screenshot {
+    text-align: center;
+    
+}
+
+.git-screenshot img {
+    filter: opacity(0.8);
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: 1s;
+    margin-bottom: 50px;
+}
+
+.git-screenshot img:hover {
+    filter: none;
+}
+
+.git-screenshot-desc p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.learn-more-2 {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: justify;
+    color: #343233;
+    background-color: #45EDC6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.learn-more-2:hover {
+    background-color: rgb(67, 218, 182);
+}
+
+.learn-more-2:active {
+    transform: translateY(2px);
+}
+/************************
+End Atom Uses
+*************************/
+
+/************************
+Start Features styling
+*************************/
+.features {
+    font-family: 'Segoe UI';
+}
+
+.expect h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.feature-list h3 {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 28.8px;
+    font-weight: 500;
+    color: #EFDAB9;
+    margin: 10px 13px;
+}
+
+.feature-list p {
+    margin: 5px 43px 30px 110px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.feature-icon {
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(67, 69, 73);
+    border: 1px solid #37383C;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.customized-features {
+    margin-top: 100px;
+}
+
+.features h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.features h3 {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 28.8px;
+    font-weight: 500;
+    color: #EFDAB9;
+    margin: 7px 13px;
+}
+
+.features p {
+    margin: 2px 43px 30px 111.3px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.features a {
+    text-decoration: none;
+    color: #FFD152;
+}
+
+.features a:hover {
+    color: #FFC31F;
+}
+
+.make-it {
+    margin-bottom: 100px;
+}
+
+/************************
+End Features styling
+*************************/
+/************************
+Start Open source styling
+*************************/
+.open-source-wrap {
+    background-color: rgb(47, 47, 51);
+    font-family: 'Segoe UI';
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.open-source {
+    margin: 50px 50px 100px;
+}
+
+.open-source-wrap h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 30px;
+}
+
+.open-source-wrap p, a, table {
+    font-size: 16px;
+    line-height: 24px;
+    color: #EFDAB9;
+    font-weight: 300;
+}
+
+.open-source p {
+    margin-bottom: 35px
+}
+
+.open-source a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: justify;
+    color: #343233;
+    background-color: #FFD152;
+    padding: 9.5px 16px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.open-source a:hover {
+    background-color: #FFC31F;
+}
+
+.open-source a:active {
+    transform: translateY(2px);
+}
+.keep-in-touch {
+    margin: 50px;
+}
+
+.contact-info {
+    margin-bottom: 50px;
+}
+
+.contact-info table {
+    margin-left: 50px;
+}
+
+table a {
+    text-decoration: none;
+    color: #FFD152;
+}
+
+table a:hover {
+    color: #FFC31F;
+}
+
+td {
+    padding-right: 32px;
+}
+/************************
+End Open source styling
+*************************/
+/************************
+Start Footer styling
+*************************/
+
+.footer-wrap {
+    background-color: #EFEAE1;
+   
+}
+
+.footer-links {
+    text-align: center;
+    width: 93%;
+    padding: 20px 5px 10px;
+}
+.footer-links a {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 400;
+    margin: 20px 5px;
+    text-decoration: none;
+    color: #574C4F;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 700;
+    margin: 20px 5px;
+    text-decoration: none;
+    color: rgb(48, 42, 44);
+}
+/************************
+End Footer styling
+*************************/
