@@ -10,11 +10,13 @@ body {
     
 }
 
+
 /* ******************
 Navigation styling
 *******************/
 .nav-wrap {
     background-color: #584B4F;
+    width: 100%;
     color: #EAE8DD;
     font-family: Arial;
     font-size: 14px;
@@ -43,6 +45,10 @@ Navigation styling
     color: #81C08B;
 }
 
+.sign-in-wrap {
+    display: inline;
+}
+
 .sign-in {
     display: inline-block;
 }
@@ -61,6 +67,7 @@ Hero Section and circles styling
 }
 
 .hero-circle {
+    border-radius: 50%;
     position: absolute;
     top: 70px;
     animation: rotate 240s infinite normal; 
@@ -481,6 +488,7 @@ Start Open source styling
     font-family: 'Segoe UI';
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .open-source {
@@ -559,6 +567,7 @@ Start Footer styling
 
 .footer-wrap {
     background-color: #EFEAE1;
+    width: 100%;
    
 }
 
@@ -592,4 +601,26 @@ Start Footer styling
 }
 /************************
 End Footer styling
+*************************/
+
+/************************
+Start media  queries
+*************************/
+@media only screen and (min-width: 904px) {
+    .nav-wrap {        
+        padding: 10px 0;
+    }
+    .top-nav {
+        text-align: left;
+        padding: 0;
+    }
+
+    .sign-in {
+        position: absolute;
+        right: 50px;
+    }
+}
+
+/************************
+End media  queries
 *************************/
