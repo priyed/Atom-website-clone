@@ -10,6 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    
   </head>
 
   <body>
@@ -79,9 +82,9 @@
           src="./images/index-portal-red-semi-5aec49dbe5d420f928cece7001b96267ee17a9d3577374b68b4fba47c547bd75.svg"
           alt="hero circle"
         />
-        <img class="atom-logo" src="./images/Atom Logo.PNG" alt="logo" />
+        <img class="atom-logo" src="./images/atomlogo.PNG" alt="logo" />
 
-        <div class="download-area">
+        <div class="download-area" data-aos="fade-up">
           <ul>
             <li class="wordmark">
               <img
@@ -122,22 +125,24 @@
           </div>
         </div>
 
-        <p class="atom-catch-phrase">
+        <p class="atom-catch-phrase" data-aos="fade-right">
           A hackable <span>text editor</span> for the 21st Century
         </p>
       </section>
 
       <section class="atom-uses">
         <div class="teletype">
-          <h2>Teletype for Atom</h2>
-          <p class="teletype-desc">
-            Great things happen when developers work together—from teaching and
-            sharing knowledge to building better sofrtware. Teletype for Atom
-            makes collaborating on code just as easy as it is to code alone,
-            right from your editor.
-          </p>
+          <div data-aos="fade-up">
+            <h2>Teletype for Atom</h2>
+            <p class="teletype-desc">
+              Great things happen when developers work together—from teaching
+              and sharing knowledge to building better sofrtware. Teletype for
+              Atom makes collaborating on code just as easy as it is to code
+              alone, right from your editor.
+            </p>
+          </div>
 
-          <div class="teletype-screenshot">
+          <div class="teletype-screenshot" data-aos="zoom-in-up">
             <div class="screenshot">
               <img
                 src="./images/index-teletype-screenshot-1de356892e9bab0f5a1e95b4a003dfecaab0d9e67a91fd60b63006a32f147db0.png"
@@ -159,34 +164,36 @@
         </div>
 
         <div class="github">
-          <h2>GitHub for Atom</h2>
-          <div class="git-atom-desc">
-            <p>
-              A text editor is at the core of a developer’s toolbox, but it
-              doesn't usually work alone. Work with Git and GitHub directly from
-              Atom with the GitHub package.
-            </p>
-            <div class="git-screenshot">
-              <img
-                src="./images/index-github-screenshot-5ef20a84a038d3d368001d2e661ca84fad58f7de9e08e9a46189ddcc2a55f993.png"
-                alt="github screenshot"
-              />
-            </div>
-            <div class="git-screenshot-desc">
+          <div >
+            <h2 data-aos="fade-down">GitHub for Atom</h2>
+            <div class="git-atom-desc">
               <p>
-                Create new branches, stage and commit, push and pull, resolve
-                merge conflicts, view pull requests and more—all from within
-                your editor. The GitHub package is already bundled with Atom, so
-                you're ready to go!
+                A text editor is at the core of a developer’s toolbox, but it
+                doesn't usually work alone. Work with Git and GitHub directly
+                from Atom with the GitHub package.
               </p>
             </div>
-            <a href="#learn-more-git" class="learn-more-2">Learn more</a>
           </div>
+          <div class="git-screenshot" data-aos="zoom-in-up">
+            <img
+              src="./images/index-github-screenshot-5ef20a84a038d3d368001d2e661ca84fad58f7de9e08e9a46189ddcc2a55f993.png"
+              alt="github screenshot"
+            />
+          </div>
+          <div class="git-screenshot-desc">
+            <p>
+              Create new branches, stage and commit, push and pull, resolve
+              merge conflicts, view pull requests and more—all from within your
+              editor. The GitHub package is already bundled with Atom, so you're
+              ready to go!
+            </p>
+          </div>
+          <a href="#learn-more-git" class="learn-more-2">Learn more</a>
         </div>
       </section>
 
       <section class="features">
-        <div class="expect">
+        <div class="expect" data-aos="zoom-in-up">
           <h2>Everything you would expect</h2>
           <div class="feature-list">
             <div class="feature-definition">
@@ -276,7 +283,7 @@
         </div>
 
         <div class="make-it">
-          <div class="customized-features">
+          <div class="customized-features" data-aos="zoom-in-down">
             <h2>Make it your editor</h2>
             <div>
               <div class="feature-icon">
@@ -413,5 +420,10 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
